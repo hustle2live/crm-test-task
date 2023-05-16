@@ -94,7 +94,7 @@
          }
       ],
       "sort-imports": [
-         "error",
+         "warn",
          {
             "ignoreCase": false,
             "ignoreDeclarationSort": true,
@@ -109,7 +109,7 @@
          }
       ],
       "import/order": [
-         "error",
+         "warn",
          {
             "groups": [
                "builtin",

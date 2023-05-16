@@ -1,0 +1,40 @@
+.css-button {
+   cursor: pointer;
+   display: inline-block;
+   min-width: 80px;
+   min-height: 29px;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 21px;
+   padding: 4px 12px;
+   color: #df0404;
+   background-color: #ffc5c5;
+   border: 1px solid #df0404;
+   border-radius: 4px;
+   margin: 4px;
+
+   &:hover {
+      background-color: transparent;
+      color: #000000;
+   }
+
+   &--active {
+      color: #008767;
+      border: 1px solid #00b087;
+      background-color: rgba(22, 192, 152, 0.38);
+   }
+   &--small {
+      font-size: 12px;
+      padding: 4px 8px;
+   }
+   &--medium {
+      font-size: 14px;
+      padding: 4px 12px;
+   }
+   &--large {
+      font-size: 20px;
+      padding: 8px 16px;
+   }
+}

@@ -1,14 +1,15 @@
 import React from 'react';
 
+import { CssButton } from './stories/CssButton';
+import { Link } from './stories/Link';
+
 const SideBar = () => (
    <>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-      <li>item 4</li>
-      <li>item 5</li>
-      <li>item 6</li>
-      <li>item 7</li>
+      <Link label="product" />
+      <Link label="customers" />
+      <Link label="income" active/>
+      <Link label="promote" />
+      <Link label="help" />
    </>
 );
 
@@ -19,6 +20,8 @@ const App = () => {
       <>
          <SideBar />
          <Content />
+         <CssButton />
+         <CssButton active />
       </>
    );
 };

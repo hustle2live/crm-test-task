@@ -1,0 +1,27 @@
+.link {
+   cursor: pointer;
+   display: block;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 21px;
+   width: 250px;
+   min-height: 20px;
+   padding: 12px;
+   color: #9197b3;
+   background: #ffffff;
+   border-radius: 8px;
+   border: 1px solid #9197b357;
+   margin: 18px 4px;
+   text-transform: capitalize;
+
+   &--active {
+      color: #ffffff;
+      background: #5932ea;
+   }
+
+   &:hover {
+      background-color: #9197b357;
+   }
+}
