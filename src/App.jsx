@@ -1,17 +1,7 @@
 import React from 'react';
 
 import { CssButton } from './stories/CssButton';
-import { Link } from './stories/Link';
-
-const SideBar = () => (
-   <>
-      <Link label="product" />
-      <Link label="customers" />
-      <Link label="income" active/>
-      <Link label="promote" />
-      <Link label="help" />
-   </>
-);
+import { SideBar } from './Components/Sidebar/SideBar';
 
 const Content = () => <div>Some Content</div>;
 
