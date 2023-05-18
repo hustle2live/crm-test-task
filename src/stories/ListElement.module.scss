@@ -12,11 +12,20 @@
    font-size: 14px;
    line-height: 21px;
    text-transform: capitalize;
+   justify-content: flex-start;
+   align-items: center;
 
    &.active {
       color: #ffffff;
       background: #5932ea;
+
+      // svg {
+      //    color: yellowgreen;
+      //    background: orangered;
+      //    fill: cornflowerblue;
+      // }
    }
+
    &:hover {
       background-color: #9197b357;
    }

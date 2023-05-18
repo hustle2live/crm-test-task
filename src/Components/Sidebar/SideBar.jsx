@@ -1,13 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-// import { Link } from '../../stories/Link';
-// import { NavLink } from 'react-router-dom';
-
 import React from 'react';
 
-import ListElem from '../../stories/ListElement';
+import { ReactComponent as Arrow } from '../../Images/Icons/arrow.svg';
+import { ReactComponent as ArrowActive } from '../../Images/Icons/arrow-white.svg';
 
-import IconDashboard from '../../Images/Icons/dashboard-main.svg';
-import IconProfile from '../../Images/Icons/dashboard-main.svg';
+import { ReactComponent as Logo } from '../../Images/Icons/dashboard-main.svg';
+import { ReactComponent as IconDashboard } from '../../Images/Icons/dashboard.svg';
+import { ReactComponent as IconCustomers } from '../../Images/Icons/customers.svg';
+import { ReactComponent as IconHelp } from '../../Images/Icons/help.svg';
+import { ReactComponent as IconIncome } from '../../Images/Icons/income.svg';
+import { ReactComponent as IconProduct } from '../../Images/Icons/product.svg';
+import { ReactComponent as IconPromote } from '../../Images/Icons/promote.svg';
+
+import ProfileImg from '../../Images/profile-icon.jpg';
+import ListElem from '../../stories/ListElement';
 
 import styles from './sidebar.module.scss';
 
@@ -15,8 +21,8 @@ export const SideBar = () => (
    <div className={styles.wrapper}>
       <div className={styles.header}>
          <div className={styles.header__content}>
-            <div className={styles.header__content_icon}>
-               <img src={IconDashboard} alt="logo" />
+            <div className={styles.header__content_logo}>
+               <Logo />
             </div>
             <p className={styles.header__content_text}>
                Dashboard{' '}
@@ -25,57 +31,54 @@ export const SideBar = () => (
          </div>
       </div>
       <nav className={styles.navMenu}>
-         <ul>
+         <ul className={styles.navMenu__list}>
             <ListElem>
-               <div className={styles.icon}>
-                  <img src="" alt="" />
-               </div>
-               <a href="#">product</a>
-               <div className={styles.arrow}>
-                  <img src="" alt="" />
-               </div>
+               <IconDashboard />
+               <a className={styles.navMenu__text} href="#">
+                  dashboard
+               </a>
+               <Arrow className={styles.navMenu__arrow} />
             </ListElem>
             <ListElem>
-               <div className={styles.icon}>
-                  <img src="" alt="" />
-               </div>
-               <a href="#">customers</a>
-               <div className={styles.arrow}>
-                  <img src="" alt="" />
-               </div>
+               <IconProduct />
+               <a className={styles.navMenu__text} href="#">
+                  product
+               </a>
+               <Arrow className={styles.navMenu__arrow} />
             </ListElem>
             <ListElem active>
-               <div className={styles.icon}>
-                  <img src="" alt="" />
-               </div>
-               <a href="#">income</a>
-               <div className={styles.arrow}>
-                  <img src="" alt="" />
-               </div>
+               <IconCustomers />
+               <a className={styles.navMenu__text} href="#">
+                  customers
+               </a>
+               <ArrowActive className={styles.navMenu__arrow} />
             </ListElem>
             <ListElem>
-               <div className={styles.icon}>
-                  <img src="" alt="" />
-               </div>
-               <a href="#">promote</a>
-               <div className={styles.arrow}>
-                  <img src="" alt="" />
-               </div>
+               <IconIncome />
+               <a className={styles.navMenu__text} href="#">
+                  income
+               </a>
+               <Arrow className={styles.navMenu__arrow} />
             </ListElem>
             <ListElem>
-               <div className={styles.icon}>
-                  <img src="" alt="" />
-               </div>
-               <a href="#">help</a>
-               <div className={styles.arrow}>
-                  <img src="" alt="" />
-               </div>
+               <IconPromote />
+               <a className={styles.navMenu__text} href="#">
+                  promote
+               </a>
+               <Arrow className={styles.navMenu__arrow} />
+            </ListElem>
+            <ListElem>
+               <IconHelp />
+               <a className={styles.navMenu__text} href="#">
+                  help
+               </a>
+               <Arrow className={styles.navMenu__arrow} />
             </ListElem>
          </ul>
       </nav>
       <div className={styles.profile}>
          <div className={styles.profile__picture}>
-            <img src={IconProfile} alt="profile" />
+            <img src={ProfileImg} alt="profile" />
          </div>
          <div className={styles.profile__description}>
             <p className={styles.profile__name}>Evano</p>
