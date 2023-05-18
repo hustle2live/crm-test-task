@@ -30,6 +30,5 @@ Link.propTypes = {
 Link.defaultProps = {
    backgroundColor: null,
    active: false,
-   label: 'Link',
    onClick: undefined
 };
