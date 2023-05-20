@@ -1,5 +1,6 @@
 .wrapper {
    width: -webkit-fill-available;
+   margin-bottom: 258px;
 }
 
 .header,
@@ -9,11 +10,6 @@
 }
 
 .header {
-      // display: flex;
-   //    align-items: center;
-   // height: 130px;
-   // width: -webkit-fill-available;
-
    &__title {
       margin-top: 35px;
       font-family: 'Poppins';
