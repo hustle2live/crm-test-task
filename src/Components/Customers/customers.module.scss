@@ -1,3 +1,8 @@
+.wrapper {
+   padding: 0 40px;
+   overflow: hidden;
+}
+
 .searchBar {
    display: flex;
    height: 130px;
@@ -48,20 +53,32 @@
          font-weight: 400;
          font-size: 12px;
          line-height: 18px;
-
          letter-spacing: -0.01em;
-
          color: #b5b7c0;
       }
    }
 }
 
 .customersTable {
-   min-height: 50vh;
+   min-height: 150px;
    table-layout: fixed;
    width: -webkit-fill-available;
    border-collapse: collapse;
-   margin: 0 30px;
+
+   thead tr {
+      position: relative;
+
+      &::after {
+         position: absolute;
+         display: block;
+         content: '';
+         height: 1px;
+         width: calc(100% + 80px);
+         left: -40px;
+         background: #eeeeee;
+         bottom: -1px;
+      }
+   }
 
    th {
       font-family: 'Poppins';
@@ -102,8 +119,9 @@
 .paginationSection {
    min-height: 95px;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
+   padding: 0 40px;
 
    p {
       font-family: 'Poppins';
@@ -145,6 +163,26 @@
          color: #ffffff;
          background: #5932ea;
          border: 1px solid #5932ea;
+      }
+   }
+}
+
+@media screen and (max-width: 1368px) {
+}
+
+@media screen and (max-width: 960px) {
+   .wrapper {
+      padding: 0 20px;
+   }
+
+   .customersTable td {
+      padding: 10px 0;
+      &:nth-child(4) {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         max-width: 58px;
+         padding-right: 10px;
       }
    }
 }

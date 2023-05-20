@@ -1,6 +1,7 @@
 .wrapper {
    width: -webkit-fill-available;
-   margin-bottom: 258px;
+   min-height: 100vh;
+   margin-bottom: 250px;
 }
 
 .header,
@@ -30,4 +31,31 @@
    background: #ffffff;
    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
    border-radius: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+   .wrapper {
+      margin-bottom: 60px;
+   }
+
+   .header,
+   .content {
+      margin-left: 60px;
+   }
+
+   .content {
+      margin-right: 65px;
+      margin-top: 20px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .wrapper {
+      margin-bottom: 0;
+   }
+
+   .header,
+   .content {
+      margin: 20px;
+   }
 }

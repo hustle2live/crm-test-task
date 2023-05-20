@@ -18,72 +18,77 @@ import ListElem from '../../stories/ListElement';
 import styles from './sidebar.module.scss';
 
 export const SideBar = () => (
-   <div className={styles.wrapper}>
-      <div className={styles.header}>
-         <div className={styles.header__content}>
-            <div className={styles.header__content_logo}>
-               <Logo />
+   <>
+      <div className={styles.wrapper}>
+         <div className={styles.header}>
+            <div className={styles.header__content}>
+               <div className={styles.header__content_logo}>
+                  <Logo />
+               </div>
+               <p className={styles.header__content_text}>
+                  Dashboard{' '}
+                  <span className={styles.header__content_version}>v.01</span>
+               </p>
             </div>
-            <p className={styles.header__content_text}>
-               Dashboard{' '}
-               <span className={styles.header__content_version}>v.01</span>
-            </p>
+         </div>
+         <nav className={styles.navMenu}>
+            <ul className={styles.navMenu__list}>
+               <ListElem>
+                  <IconDashboard />
+                  <a className={styles.navMenu__text} href="#">
+                     dashboard
+                  </a>
+                  <Arrow className={styles.navMenu__arrow} />
+               </ListElem>
+               <ListElem>
+                  <IconProduct />
+                  <a className={styles.navMenu__text} href="#">
+                     product
+                  </a>
+                  <Arrow className={styles.navMenu__arrow} />
+               </ListElem>
+               <ListElem active>
+                  <IconCustomers />
+                  <a className={styles.navMenu__text} href="#">
+                     customers
+                  </a>
+                  <ArrowActive className={styles.navMenu__arrow} />
+               </ListElem>
+               <ListElem>
+                  <IconIncome />
+                  <a className={styles.navMenu__text} href="#">
+                     income
+                  </a>
+                  <Arrow className={styles.navMenu__arrow} />
+               </ListElem>
+               <ListElem>
+                  <IconPromote />
+                  <a className={styles.navMenu__text} href="#">
+                     promote
+                  </a>
+                  <Arrow className={styles.navMenu__arrow} />
+               </ListElem>
+               <ListElem>
+                  <IconHelp />
+                  <a className={styles.navMenu__text} href="#">
+                     help
+                  </a>
+                  <Arrow className={styles.navMenu__arrow} />
+               </ListElem>
+            </ul>
+         </nav>
+         <div className={styles.profile}>
+            <div className={styles.profile__picture}>
+               <img src={ProfileImg} alt="profile" />
+            </div>
+            <div className={styles.profile__description}>
+               <p className={styles.profile__name}>Evano</p>
+               <p className={styles.profile__position}>Project Manager</p>
+            </div>
          </div>
       </div>
-      <nav className={styles.navMenu}>
-         <ul className={styles.navMenu__list}>
-            <ListElem>
-               <IconDashboard />
-               <a className={styles.navMenu__text} href="#">
-                  dashboard
-               </a>
-               <Arrow className={styles.navMenu__arrow} />
-            </ListElem>
-            <ListElem>
-               <IconProduct />
-               <a className={styles.navMenu__text} href="#">
-                  product
-               </a>
-               <Arrow className={styles.navMenu__arrow} />
-            </ListElem>
-            <ListElem active>
-               <IconCustomers />
-               <a className={styles.navMenu__text} href="#">
-                  customers
-               </a>
-               <ArrowActive className={styles.navMenu__arrow} />
-            </ListElem>
-            <ListElem>
-               <IconIncome />
-               <a className={styles.navMenu__text} href="#">
-                  income
-               </a>
-               <Arrow className={styles.navMenu__arrow} />
-            </ListElem>
-            <ListElem>
-               <IconPromote />
-               <a className={styles.navMenu__text} href="#">
-                  promote
-               </a>
-               <Arrow className={styles.navMenu__arrow} />
-            </ListElem>
-            <ListElem>
-               <IconHelp />
-               <a className={styles.navMenu__text} href="#">
-                  help
-               </a>
-               <Arrow className={styles.navMenu__arrow} />
-            </ListElem>
-         </ul>
-      </nav>
-      <div className={styles.profile}>
-         <div className={styles.profile__picture}>
-            <img src={ProfileImg} alt="profile" />
-         </div>
-         <div className={styles.profile__description}>
-            <p className={styles.profile__name}>Evano</p>
-            <p className={styles.profile__position}>Project Manager</p>
-         </div>
+      <div className={styles.showButton}>
+         <Logo />
       </div>
-   </div>
+   </>
 );
