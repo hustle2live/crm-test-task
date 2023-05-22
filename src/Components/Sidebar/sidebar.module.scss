@@ -13,12 +13,13 @@
 }
 
 .wrapper {
+   min-width: 306px;
    width: 306px;
    min-height: 100vh;
    background: #ffffff;
    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
    position: relative;
-   transition: 1.8s ease-in-out;
+   transition: 1.2s ease-in-out;
 }
 
 .showButton {
@@ -31,6 +32,12 @@
    padding: 5px;
    width: 40px;
    height: 40px;
+   transition: 1.2s ease-in-out;
+
+   svg {
+      opacity: 1;
+      display: block;
+   }
 
    svg path {
       fill: rgb(9, 9, 9);
@@ -38,6 +45,7 @@
 
    span {
       display: none;
+      opacity: 0;
    }
 }
 
@@ -46,7 +54,7 @@
 
    &__content {
       align-items: center;
-      margin: 35px 0 24px 30px;
+      padding: 35px 0 24px 30px;
 
       &_text,
       &_version {
@@ -59,7 +67,7 @@
          font-size: 26px;
          letter-spacing: 0.01em;
          color: #000000;
-         margin: 0 5px 0 10px;
+         margin: 0 5px;
       }
 
       &_version {
@@ -131,17 +139,18 @@
 
 @media screen and (max-width: 1200px) {
    .wrapper {
-      width: 260px;
+      min-width: 265px;
+      width: 265px;
    }
 
    .header {
       height: 100px;
 
       &__content {
-         margin: 30px 20px;
-         margin-right: 0;
+         padding-left: 24px;
 
          &_text {
+            font-size: 24px;
             letter-spacing: -0.01em;
             margin: 0 4px;
          }
@@ -151,12 +160,13 @@
 
 @media screen and (max-width: 960px) {
    .wrapper {
+      min-width: 230px;
       width: 230px;
    }
 
    .header {
       &__content {
-         margin: 30px 14px;
+         padding: 30px 24px;
          &_text {
             font-size: 20px;
          }
@@ -200,10 +210,34 @@
 
          svg {
             display: none;
+            opacity: 0;
          }
 
          span {
             display: block;
+            opacity: 1;
+         }
+      }
+   }
+
+   .profile {
+      margin: 30px 24px;
+   }
+}
+
+@media screen and (max-width: 560px) {
+   .profile {
+      margin: 14px 18px;
+   }
+
+   .header {
+      height: 60px;
+
+      &__content {
+         padding: 14px 18px;
+
+         &_text {
+            font-size: 14px;
          }
       }
    }
