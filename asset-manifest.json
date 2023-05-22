@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/crm-test-task/static/css/main.4e5254bb.css",
+    "main.js": "/crm-test-task/static/js/main.d41b1718.js",
+    "static/js/787.7eef10a9.chunk.js": "/crm-test-task/static/js/787.7eef10a9.chunk.js",
+    "static/media/promote.svg": "/crm-test-task/static/media/promote.5230029f4e637c534c143c4d95cf421f.svg",
+    "static/media/income.svg": "/crm-test-task/static/media/income.25d824b57e5c5a753432296807e7285d.svg",
+    "static/media/product.svg": "/crm-test-task/static/media/product.1ca4fd5b650bd0a4104c1a2789ca1171.svg",
+    "static/media/help.svg": "/crm-test-task/static/media/help.5d23912a887f9edc9d9f8d957ec960e6.svg",
+    "static/media/customers.svg": "/crm-test-task/static/media/customers.bea4d73518d783c79dfc84230b2e901d.svg",
+    "static/media/dashboard-main.svg": "/crm-test-task/static/media/dashboard-main.fe984a6cdb2ef8c5a0b69a7ef20deea3.svg",
+    "static/media/dashboard.svg": "/crm-test-task/static/media/dashboard.153a0eb179be0548729792a4f21fc52e.svg",
+    "index.html": "/crm-test-task/index.html",
+    "static/media/search.svg": "/crm-test-task/static/media/search.d555a35800fec6f7c1928aef95546ef7.svg",
+    "static/media/arrow.svg": "/crm-test-task/static/media/arrow.05c67f5f0585d177024ef1d371e79dd6.svg",
+    "static/media/arrow-white.svg": "/crm-test-task/static/media/arrow-white.3f876a0bd0816e20fb0eb52ea56d7a04.svg",
+    "static/media/chevron_left.svg": "/crm-test-task/static/media/chevron_left.7cf97fe7c4a194e671023102ca1d94a0.svg",
+    "static/media/chevron_right.svg": "/crm-test-task/static/media/chevron_right.d38005f2b721689b4def76898c3237b7.svg",
+    "main.4e5254bb.css.map": "/crm-test-task/static/css/main.4e5254bb.css.map",
+    "main.d41b1718.js.map": "/crm-test-task/static/js/main.d41b1718.js.map",
+    "787.7eef10a9.chunk.js.map": "/crm-test-task/static/js/787.7eef10a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e5254bb.css",
+    "static/js/main.d41b1718.js"
+  ]
+}
