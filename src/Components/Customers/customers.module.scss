@@ -186,3 +186,45 @@
       }
    }
 }
+
+@media screen and (max-width: 768px) {
+   .wrapper {
+      overflow-x: scroll;
+   }
+}
+
+@media screen and (max-width: 560px) {
+   .paginationSection,
+   .searchBar,
+   .wrapper {
+      padding: 0 14px;
+   }
+
+   .customersTable {
+      td {
+         font-weight: 400;
+         line-height: 16px;
+         letter-spacing: -0.01em;
+         padding: 10px 0;
+      }
+   }
+
+   .searchBar {
+      height: 80px;
+
+      &__tableTitleDiv,
+      &__inputDivElement {
+         flex-basis: 50%;
+      }
+
+      &__input {
+         width: 100%;
+         min-width: 120px;
+      }
+   }
+
+   .paginationSection {
+      flex-direction: column-reverse;
+      justify-content: center;
+   }
+}

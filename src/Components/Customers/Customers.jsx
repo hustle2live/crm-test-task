@@ -11,7 +11,7 @@ import styles from './customers.module.scss';
 
 const SearchBar = (props) => (
    <section className={styles.searchBar}>
-      <div>
+      <div className={styles.searchBar__tableTitleDiv}>
          <h3>All Customers</h3>
          <p>Active Members</p>
       </div>

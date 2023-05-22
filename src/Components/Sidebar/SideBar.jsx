@@ -17,9 +17,15 @@ import ListElem from '../../stories/ListElement';
 
 import styles from './sidebar.module.scss';
 
+const hideSideBar = (e) => {
+   e.preventDefault();
+   e.currentTarget.parentNode.classList.toggle(`${styles.close}`);
+   e.currentTarget.classList.toggle(`${styles.visible}`);
+};
+
 export const SideBar = () => (
    <>
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} ${styles.close}`}>
          <div className={styles.header}>
             <div className={styles.header__content}>
                <div className={styles.header__content_logo}>
@@ -86,9 +92,10 @@ export const SideBar = () => (
                <p className={styles.profile__position}>Project Manager</p>
             </div>
          </div>
-      </div>
-      <div className={styles.showButton}>
-         <Logo />
+         <button className={styles.showButton} onClick={(e) => hideSideBar(e)}>
+            <Logo />
+            <span class="material-symbols-outlined">close</span>
+         </button>
       </div>
    </>
 );
